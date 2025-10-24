@@ -121,16 +121,6 @@ body {
     z-index: 1;
   }
 
-  .back-btn p {
-    position: absolute;
-    top: 75%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    margin: 0;
-    font-size: 12px;
-  }
-
   .hero-section {
     display: flex;
     flex-direction: column;
@@ -187,13 +177,143 @@ body {
     z-index: 1;
   }
 
-  .cards-section {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .card-section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+  }
+
+  .title-content {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .title-content h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .title-content p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .card-content {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 312px;
+    height: 275px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+  }
+
+  .card .card-text {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .card .card-text h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-text p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1rem;
+  }
+
+  .grid-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .grid-card-01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-content {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-content p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .img-content img {
+    width: 312px;
+    height: 300px;
+  }
+
+  .grid-card-02 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-img img {
+    width: 312px;
+    height: 300px;
   }
 }
 
@@ -224,6 +344,29 @@ body {
 
   .hero-content .scroll-btn {
     margin-top: 5rem;
+  }
+
+  .title-content {
+    text-align: center;
+  }
+
+  .card-content {
+    gap: 2rem;
+  }
+
+  .text-content {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .img-content {
+    width: 100%;
+  }
+  .img-content img {
+    width: 100%;
+  }
+  .card-img img {
+    width: 100%;
   }
 }
 
@@ -285,9 +428,48 @@ body {
   .hero-content p {
     font-size: 15px;
   }
+
+  .card-section {
+    text-align: center;
+  }
+
+  .grid-section {
+    flex-direction: row;
+    align-items: center;
+    margin: 5rem 0;
+    padding: 1rem;
+  }
+
+  .grid-card-01 {
+    width: 50%;
+  }
+
+  .img-content img {
+    width: 500px;
+    height: 450px;
+  }
+
+  .text-content {
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  .grid-card-02 {
+    width: 50%;
+  }
+
+  .card-img img {
+    width: 425px;
+    height: 300px;
+  }
 }
 
 @media (min-width: 1440px) {
+  .header {
+    padding-left: 5rem;
+  }
+
   .hero-section {
     height: 450px;
   }
@@ -295,7 +477,7 @@ body {
   .hero-content {
     width: 55%;
     padding: 0.5rem;
-    margin-left: 1.5rem;
+    margin-left: 3.5rem;
   }
 
   .hero-content h1 {
@@ -315,13 +497,45 @@ body {
     text-decoration: none;
     margin: 0 1rem;
   }
-}
 
-@media (min-width: 2560px) {
-  .header {
-    padding: 0 5rem;
+  .main-content {
+    justify-content: center;
   }
-  .hero-content {
-    padding: 4rem;
+
+  .title-content {
+    margin: 2rem;
+  }
+
+  .title-content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .title-content p {
+    font-size: 17px;
+  }
+
+  .card-content {
+    gap: 1rem;
+  }
+
+  .text-content {
+    padding: 0 1rem;
+  }
+
+  .img-content img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .card-img {
+    margin-left: 1rem;
+    gap: 0.9rem;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: 300px;
   }
 }
